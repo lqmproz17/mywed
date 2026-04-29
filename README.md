@@ -1,6 +1,6 @@
 THIẾT KẾ WEBSITE "CÁ NHÂN"
 Xin chào, tôi là Nguyễn Lâm Anh Phong.
-Đây là website cá nhân giới thiệu về tôi và các nội dung liên quan đến đô nội thất trang trí.
+Đây là website cá nhân giới thiệu về tôi và các nội dung liên quan đến đồ nội thất trang trí.
 Mục tiêu
 * **Giới thiệu bản thân và các thông tin cá nhân
 * **Giới thiệu các sản phẩm
