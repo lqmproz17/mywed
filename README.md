@@ -37,7 +37,8 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
    * **Danh sách dự án khác:** Phía dưới là lưới các dự án phụ giúp khách hàng có cái nhìn tổng quan về đa dạng phong cách thiết kế.
 #### 4. Trang Liên Hệ (Contact Page)
 
-<img width="704" height="539" alt="85e065b8-6dd8-4589-bfa7-ebb9a264b566" src="https://github.com/user-attachments/assets/49ee0c5f-29cc-4b80-8da1-cf070bb9d34d" />
+<img width="1433" height="1098" alt="AA" src="https://github.com/user-attachments/assets/92d3bf2e-ccf4-44ee-97ed-0a42aee321fc" />
+
 
  * **Mục tiêu:** Chuyển đổi người xem thành khách hàng tiềm năng bằng cách để lại thông tin.
  * **Thành phần chính:**
@@ -45,3 +46,11 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
    * **Thông tin địa chỉ:** Hiển thị địa chỉ văn phòng tại TP. Hồ Chí Minh và số Hotline liên hệ.
    * **Bản đồ (Google Maps):** Một khung nhúng bản đồ trực quan giúp khách hàng dễ dàng tìm đường đến showroom.
    * **Giải đáp thắc mắc (FAQS):** Một mục nhỏ ở góc cuối giúp giải đáp thắc mắc của khách hàng.
+#### 5. Giải đáp thắc mắc (FAQS)
+<img width="1448" height="1086" alt="AAA" src="https://github.com/user-attachments/assets/c841b7c0-7de2-4a26-b6f2-2221828e2b79" />
+
+
+ * **Mục tiêu:** Giúp giải đáp những thắc mắc của khách hàng>
+ * **Thành phần chính:**
+   * **Cấu trúc Accordion:** Sử dụng dấu {+} để mở và {-} để đóng câu hỏi
+
