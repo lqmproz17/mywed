@@ -24,9 +24,9 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
 
  * **Mục tiêu:** Xây dựng lòng tin với khách hàng thông qua lịch sử và kinh nghiệm.
  * **Thành phần chính:**
-   * **Giới thiệu:** Đoạn văn bản mô tả về 10 năm kinh nghiệm của "Anh Phong" trong lĩnh vực thiết kế ánh sáng và nội thất.
+   * **Giới thiệu:** Đoạn văn bản mô tả về 10 năm kinh nghiệm của "Anh Phong" trong lĩnh vực thiết kế ánh sáng, nội thất, trang trí nhà cửa.
    * **Hình ảnh minh họa:** Khối hình ảnh lớn bên phải để minh họa cho quy trình làm việc.
-   * **Timeline (Lịch sử phát triển):** Một trục thời gian ngang với các mốc quan trọng (Tham 1, 3, 5, 6) được trình bày logic và dễ theo dõi.
+   * **Timeline (Lịch sử phát triển):** Một trục thời gian ngang với các mốc quan trọng (Thời gian) được trình bày logic và dễ theo dõi.
 #### 3. Trang về dự án ( Projects Page)
 
 <img width="561" height="449" alt="24f4d439-59c0-46b6-83dc-1b786b806190" src="https://github.com/user-attachments/assets/4adce9c0-7d33-4a59-9637-70527a6e7db8" />
@@ -35,7 +35,6 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
  * **Thành phần chính:**
    * **Dự án tiêu biểu:** Phần phía trên trình bày chi tiết một dự án lớn bao gồm hình ảnh, tên khách hàng (Công ty SBC), vị trí và công nghệ sử dụng.
    * **Danh sách dự án khác:** Phía dưới là lưới các dự án phụ giúp khách hàng có cái nhìn tổng quan về đa dạng phong cách thiết kế.
-   * **Điều hướng:** Có nút "Trở lại Dự án" giúp người dùng quay lại danh sách tổng dễ dàng.
 #### 4. Trang Liên Hệ (Contact Page)
 
 <img width="704" height="539" alt="85e065b8-6dd8-4589-bfa7-ebb9a264b566" src="https://github.com/user-attachments/assets/49ee0c5f-29cc-4b80-8da1-cf070bb9d34d" />
@@ -45,3 +44,4 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
    * **Contact Form:** Gồm các trường: Họ và tên, Email, Lời nhắn với nút "GỬI YÊU CẦU" được thiết kế nổi bật.
    * **Thông tin địa chỉ:** Hiển thị địa chỉ văn phòng tại TP. Hồ Chí Minh và số Hotline liên hệ.
    * **Bản đồ (Google Maps):** Một khung nhúng bản đồ trực quan giúp khách hàng dễ dàng tìm đường đến showroom.
+   * **Giải đáp thắc mắc (FAQS):** Một mục nhỏ ở góc cuối giúp giải đáp thắc mắc của khách hàng.
