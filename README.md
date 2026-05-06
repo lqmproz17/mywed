@@ -6,6 +6,7 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
 *  Giới thiệu bản thân và các thông tin cá nhân
 *  Giới thiệu các sản phẩm
 *  Chia sẻ các dự án
+*  Chia sẻ kinh nghiệm, giải đáp thắc mắc
 *  Chia sẻ thông tin liên hệ hợp tác
 #### 1. Trang Chủ (Home Page)
 
