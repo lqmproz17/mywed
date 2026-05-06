@@ -1,6 +1,7 @@
 THIẾT KẾ WEBSITE "CÁ NHÂN"
 Xin chào, tôi là Nguyễn Lâm Anh Phong.
 Đây là website cá nhân giới thiệu về tôi và các nội dung liên quan đến đồ nội thất, dự án trang trí nhà cửa
+### Phần mềm sử dụng : CANVA
 
 #### Mục tiêu
 *  Giới thiệu bản thân và các thông tin cá nhân
