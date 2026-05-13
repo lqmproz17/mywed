@@ -2,61 +2,122 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Liên Hệ - Anh Phong</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Phong - Liên hệ & FAQS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .contact-section { display: flex; gap: 50px; margin-bottom: 60px; }
-        .contact-form { flex: 1; }
-        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; }
-        .btn-submit { background: #000; color: #fff; padding: 15px; width: 100%; border: none; cursor: pointer; }
-        .contact-info { flex: 1; }
-        .map-placeholder { height: 200px; margin-top: 20px; }
+        body { font-family: 'Inter', sans-serif; transition: all 0.3s ease; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-item.active .accordion-content { max-height: 200px; }
+        .accordion-item.active .icon-plus { display: none; }
+        .accordion-item.active .icon-minus { display: block; }
+        .icon-minus { display: none; }
         
-        .faq-section { background: #f4f4f4; padding: 40px; border-radius: 8px; }
-        .faq-item { background: #fff; border: 1px solid #ddd; margin-bottom: 10px; padding: 15px; cursor: pointer; }
-        .faq-answer { font-size: 0.9rem; color: #666; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
+        /* Ẩn mặc định */
+        .hidden-section { display: none; }
     </style>
 </head>
-<body>
-    <header>...</header>
+<body class="bg-white text-gray-900">
 
-    <main class="container">
-        <h2 style="text-align: center; margin-bottom: 30px;">LIÊN HỆ VỚI CHÚNG TÔI</h2>
-        <section class="contact-section">
-            <div class="contact-form">
-                <input type="text" placeholder="Họ và tên">
-                <input type="email" placeholder="Email">
-                <textarea rows="5" placeholder="Lời nhắn"></textarea>
-                <button class="btn-submit">GỬI YÊU CẦU</button>
-            </div>
-            <div class="contact-info">
-                <p><strong>Thông tin địa chỉ</strong></p>
-                <p>📍 122 Delling ASG, Sube 1, TP Hồ Chí Minh</p>
-                <p>📞 Hotline: 1900 1224</p>
-                <p>Bản đồ (Google Maps)</p>
-                <div class="map-placeholder placeholder-img"></div>
-            </div>
-        </section>
+    <!-- HEADER -->
+    <header class="border-b border-gray-300 px-10 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold uppercase">Anh Phong</h1>
+        <nav class="flex gap-8 text-sm font-medium uppercase">
+            <a href="#" class="hover:underline">Trang chủ</a>
+            <a href="#" class="hover:underline">Về chúng tôi</a>
+            <a href="#" class="hover:underline">Dự án</a>
+            <a href="#" class="border-b-2 border-black pb-1">Liên hệ</a>
+        </nav>
+        <div class="flex gap-4">
+            <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+            <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+        </div>
+    </header>
 
-        <section class="faq-section">
-            <h2 style="text-align: center; margin-bottom: 20px;">CÂU HỎI THƯỜNG GẶP</h2>
-            <div class="faq-item">
-                <strong>1. Thời gian hoàn thành một dự án là bao lâu?</strong>
-                <div class="faq-answer">Tùy theo quy mô... dao động từ 2 đến 6 tuần.</div>
+    <!-- SECTION 1: LIÊN HỆ (HIỆN MẶC ĐỊNH) -->
+    <main id="contact-section" class="max-w-6xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center uppercase mb-12 tracking-widest">Liên hệ với chúng tôi</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <form class="space-y-4">
+                <input type="text" placeholder="Họ và tên" class="w-full border border-gray-400 p-3 outline-none">
+                <input type="email" placeholder="Email" class="w-full border border-gray-400 p-3 outline-none">
+                <textarea placeholder="Lời nhắn" rows="5" class="w-full border border-gray-400 p-3 outline-none"></textarea>
+                <button type="submit" class="w-full bg-black text-white py-3 font-bold uppercase hover:bg-gray-800 transition">Gửi yêu cầu</button>
+            </form>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold mb-4">Thông tin địa chỉ</h3>
+                    <p class="flex items-start gap-3 text-sm mb-2"><i class="fa-solid fa-location-dot mt-1"></i> 122 Delling ASG, Sube 1, TP Hồ Chí Minh</p>
+                    <p class="flex items-center gap-3 text-sm"><i class="fa-solid fa-phone"></i> Hotline: 1900 1224</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2 text-sm">Bản đồ (Google Maps)</h3>
+                    <div class="w-full h-48 bg-gray-200 border border-gray-300 flex items-center justify-center">
+                        <span class="text-gray-400 italic">Bản đồ mô phỏng</span>
+                    </div>
+                </div>
             </div>
-            <div class="faq-item"><strong>2. Chi phí thiết kế được tính như thế nào?</strong></div>
-            <div class="faq-item"><strong>3. Tôi có thể yêu cầu chỉnh sửa không?</strong></div>
-            
-            <div style="text-align: center; margin-top: 30px;">
-                <p>Bạn vẫn còn câu hỏi?</p>
-                <button style="padding: 10px 20px; background: #000; color: #fff;">LIÊN HỆ NGAY</button>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-socials">...</div>
-        <div class="copyright">© 2026 Anh Phong <span style="border: 1px dashed #333; padding: 2px 5px; margin-left: 10px;">FAQS</span></div>
+    <!-- SECTION 2: CÂU HỎI THƯỜNG GẶP (MẶC ĐỊNH ẨN) -->
+    <section id="faq-section" class="max-w-4xl mx-auto py-16 px-6 hidden-section">
+        <h2 class="text-2xl font-bold text-center uppercase mb-10 tracking-widest">Câu hỏi thường gặp</h2>
+        <div class="border border-gray-400 divide-y divide-gray-400">
+            <div class="accordion-item active">
+                <button class="faq-toggle w-full flex justify-between items-center p-4 font-bold text-sm text-left uppercase bg-gray-100">
+                    1. Thời gian hoàn thành một dự án là bao lâu?
+                    <span class="icon-plus text-xl">+</span>
+                    <span class="icon-minus text-xl">−</span>
+                </button>
+                <div class="accordion-content bg-gray-50 px-4 pb-4 text-sm text-gray-700">
+                    <p class="pt-2">Tùy theo quy mô và độ phức tạp của từng dự án. Thông thường từ 2 đến 6 tuần.</p>
+                </div>
+            </div>
+            <!-- Thêm các FAQ khác tương tự -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-gray-300 px-10 py-4 flex justify-between items-center text-[10px] font-bold uppercase text-gray-600">
+        <div class="flex items-center gap-4">
+            <span class="cursor-pointer" onclick="showSection('contact')">Liên hệ</span>
+            <div class="flex gap-3 text-sm">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div>© 2026 Anh Phong</div>
+        <!-- Nút bấm quan trọng ở đây -->
+        <div id="faq-btn" class="border border-dashed border-gray-500 px-4 py-1 cursor-pointer hover:bg-black hover:text-white transition" onclick="showSection('faq')">
+            FAQS
+        </div>
     </footer>
+
+    <script>
+        function showSection(type) {
+            const contact = document.getElementById('contact-section');
+            const faq = document.getElementById('faq-section');
+            
+            if (type === 'faq') {
+                contact.classList.add('hidden-section');
+                faq.classList.remove('hidden-section');
+                window.scrollTo(0, 0); // Cuộn lên đầu trang
+            } else {
+                faq.classList.add('hidden-section');
+                contact.classList.remove('hidden-section');
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // Logic đóng mở FAQ
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                button.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
+        
