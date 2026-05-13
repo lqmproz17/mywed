@@ -55,3 +55,25 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
  * **Thành phần chính:**
    * **Cấu trúc Accordion:** Sử dụng dấu {+} để mở và {-} để đóng câu hỏi
 
+
+# Công Cụ AI & CSS Trong Dự Án
+
+* Dự án được xây dựng với sự hỗ trợ của các công cụ AI hiện đại nhằm tăng tốc quá trình thiết kế giao diện, tối ưu bố cục và nâng cao trải nghiệm người dùng, tối ưu CSS và cải thiện tính responsive cho website.
+
+## Công Cụ AI Sử Dụng
+
+- ChatGPT AI
+- AI hỗ trợ thiết kế CSS
+- AI tối ưu giao diện Responsive
+- AI hỗ trợ thiết kế UI/UX
+
+## Lệnh AI Hỗ Trợ
+
+Một số lệnh AI được sử dụng trong quá trình phát triển:
+   * Tạo giao diện website nội thất hiện đại
+   * Thiết kế CSS dark mode tối giản
+   * Tối ưu responsive cho mobile
+   * Tạo hiệu ứng FAQ bằng JavaScript
+   * Thiết kế layout dạng grid hiện đại
+
+
