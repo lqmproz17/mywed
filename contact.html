@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên Hệ - Anh Phong</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-section { display: flex; gap: 50px; margin-bottom: 60px; }
+        .contact-form { flex: 1; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; }
+        .btn-submit { background: #000; color: #fff; padding: 15px; width: 100%; border: none; cursor: pointer; }
+        .contact-info { flex: 1; }
+        .map-placeholder { height: 200px; margin-top: 20px; }
+        
+        .faq-section { background: #f4f4f4; padding: 40px; border-radius: 8px; }
+        .faq-item { background: #fff; border: 1px solid #ddd; margin-bottom: 10px; padding: 15px; cursor: pointer; }
+        .faq-answer { font-size: 0.9rem; color: #666; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <header>...</header>
+
+    <main class="container">
+        <h2 style="text-align: center; margin-bottom: 30px;">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+        <section class="contact-section">
+            <div class="contact-form">
+                <input type="text" placeholder="Họ và tên">
+                <input type="email" placeholder="Email">
+                <textarea rows="5" placeholder="Lời nhắn"></textarea>
+                <button class="btn-submit">GỬI YÊU CẦU</button>
+            </div>
+            <div class="contact-info">
+                <p><strong>Thông tin địa chỉ</strong></p>
+                <p>📍 122 Delling ASG, Sube 1, TP Hồ Chí Minh</p>
+                <p>📞 Hotline: 1900 1224</p>
+                <p>Bản đồ (Google Maps)</p>
+                <div class="map-placeholder placeholder-img"></div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2 style="text-align: center; margin-bottom: 20px;">CÂU HỎI THƯỜNG GẶP</h2>
+            <div class="faq-item">
+                <strong>1. Thời gian hoàn thành một dự án là bao lâu?</strong>
+                <div class="faq-answer">Tùy theo quy mô... dao động từ 2 đến 6 tuần.</div>
+            </div>
+            <div class="faq-item"><strong>2. Chi phí thiết kế được tính như thế nào?</strong></div>
+            <div class="faq-item"><strong>3. Tôi có thể yêu cầu chỉnh sửa không?</strong></div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <p>Bạn vẫn còn câu hỏi?</p>
+                <button style="padding: 10px 20px; background: #000; color: #fff;">LIÊN HỆ NGAY</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-socials">...</div>
+        <div class="copyright">© 2026 Anh Phong <span style="border: 1px dashed #333; padding: 2px 5px; margin-left: 10px;">FAQS</span></div>
+    </footer>
+</body>
+</html>
