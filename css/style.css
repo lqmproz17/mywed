@@ -1,251 +1,191 @@
-/* --- BIẾN TOÀN CỤC (COLORS & SETTINGS) --- */
+/* --- PHÔNG CHỮ & BIẾN --- */
 :root {
-    --bg-main: #0a0a0a;         /* Đen sâu cho nền chính */
-    --bg-secondary: #141414;    /* Xám cực tối cho các khối */
-    --text-main: #ffffff;       /* Trắng cho tiêu đề */
-    --text-muted: #a0a0a0;      /* Xám nhạt cho nội dung phụ */
-    --accent: #ffffff;          /* Màu nhấn (trắng tinh khiết) */
-    --border: #262626;          /* Màu đường kẻ mảnh */
-    --transition: all 0.3s ease;
+    --primary-color: #333333;    /* Chữ chính */
+    --accent-color: #a68b6d;     /* Màu đồng nhấn dưới tiêu đề */
+    --bg-light: #fdfdfd;         /* Nền trang sáng */
+    --footer-bg: #3e4455;       /* Màu xanh xám của footer trong ảnh */
+    --text-white: #ffffff;
+    --border-color: #eeeeee;
 }
 
-/* --- TỔNG THỂ --- */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', -apple-system, sans-serif; /* Font hiện đại */
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
 body {
-    background-color: var(--bg-main);
-    color: var(--text-muted);
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: var(--text-main);
-    letter-spacing: -0.02em;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition);
-}
-
-/* --- HEADER --- */
+/* --- HEADER (Ảnh 273470.jpg) --- */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
-    border-bottom: 1px solid var(--border);
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(10px); /* Hiệu ứng mờ nền khi cuộn */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 20px 8%;
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--text-main);
-    letter-spacing: 2px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: #000;
 }
 
 nav ul {
     display: flex;
-    gap: 35px;
+    gap: 25px;
+    list-style: none;
 }
 
 nav ul li a {
-    font-size: 0.85rem;
-    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-nav ul li a:hover {
-    color: var(--text-main);
 }
 
 .nav-icons {
     display: flex;
-    gap: 20px;
-    font-size: 1.1rem;
-    cursor: pointer;
+    gap: 15px;
+    font-size: 1.2rem;
 }
 
-/* --- LAYOUT CHUNG --- */
-.container {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-.placeholder-img {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.placeholder-img::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(45deg, transparent 49%, var(--border) 50%, transparent 51%),
-                linear-gradient(-45deg, transparent 49%, var(--border) 50%, transparent 51%);
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-/* --- TRANG CHỦ --- */
+/* --- TRANG CHỦ: HERO (Ảnh 273470.jpg) --- */
 .hero {
-    height: 550px;
-    margin-bottom: 60px;
-    border-radius: 4px;
-}
-
-.feature-box {
-    height: 250px;
-    border-radius: 4px;
-}
-
-.feature-box:hover {
-    border-color: #444;
-    transform: translateY(-5px);
-}
-
-/* --- TRANG VỀ CHÚNG TÔI --- */
-.about-content {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    margin-bottom: 100px;
-}
-
-.about-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-}
-
-.about-img {
-    width: 100%;
-    height: 450px;
-    border-radius: 4px;
-}
-
-.timeline {display: flex;
-    justify-content: space-between;
-    padding: 60px 0;
-    border-top: 1px solid var(--border);
-    margin-top: 40px;
-}
-
-.timeline-item {
-    width: 22%;
     position: relative;
+    height: 80vh;
+    background: url('hero-image.jpg') no-repeat center center/cover; /* Thay bằng ảnh thực của bạn */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
-.timeline-item::before {
+/* Lớp phủ làm tối ảnh nền để nổi chữ */
+.hero::before {
     content: '';
     position: absolute;
-    top: -65px;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    background: var(--accent);
-    border-radius: 50%;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.2);
 }
 
-/* --- TRANG DỰ ÁN --- */
-.featured-project {
-    display: flex;
-    gap: 40px;
-    background: var(--bg-secondary);
-    padding: 40px;
-    border: 1px solid var(--border);
-    margin-bottom: 60px;
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
-.project-details table {
-    width: 100%;
-    border-spacing: 0 15px;
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
-.project-details td {
-    padding: 8px 0;
-    border-bottom: 1px solid var(--border);
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 
-.project-details td strong {
-    color: var(--text-main);
-    font-size: 0.9rem;
-}
-
-/* --- TRANG LIÊN HỆ --- */
-.contact-form input, .contact-form textarea {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    color: var(--text-main);
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    width: 100%;
-}
-
-.btn-submit {
-    background: var(--accent);
-    color: #000;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 18px;
-    border-radius: 4px;
+.btn-hero {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 40px;
+    text-transform: uppercase;
     cursor: pointer;
-    border: none;
-    transition: var(--transition);
+    transition: 0.3s;
 }
 
-.btn-submit:hover {
-    background: #ccc;
+/* --- TIÊU ĐỀ CÓ GẠCH CHÂN (Ảnh 273472.jpg, 273473.jpg) --- */
+.section-title {
+    text-align: center;
+    margin: 60px 0 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
 }
 
-.faq-item {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    margin-bottom: 15px;
-    padding: 20px;
-    border-radius: 4px;
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--accent-color);
+    margin: 15px auto 0;
 }
 
-/* --- FOOTER --- */
-footer {
+/* --- VỀ CHÚNG TÔI (Ảnh 273471.jpg) --- */
+.about-container {
     display: flex;
-    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 50px;
     align-items: center;
-    padding: 40px 5%;
-    border-top: 1px solid var(--border);
-    margin-top: 100px;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
 }
 
-.footer-socials {
-    display: flex;
-    gap: 20px;
+.about-text { flex: 1; }
+.about-text h2 { font-size: 2rem; margin-bottom: 20px; }
+.about-image { flex: 1; }
+.about-image img { width: 100%; border-radius: 2px; }
+
+/* --- SẢN PHẨM & DỰ ÁN (Ảnh 273472.jpg, 273473.jpg) --- */
+.product-card {max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.footer-socials span:hover {
-    color: var(--text-main);
+.product-card img {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.product-name { font-weight: bold; margin-bottom: 5px; }
+.product-price, .project-date { color: #888; font-size: 0.9rem; }
+
+/* --- LIÊN HỆ (Ảnh 273474.jpg) --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 40px 10%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-send {
+    background: var(--footer-bg);
+    color: white;
+    border: none;
+    padding: 15px 40px;
     cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* --- FOOTER (Tất cả ảnh) --- */
+footer {
+    background-color: var(--footer-bg);
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.8rem;
+    margin-top: 80px;
 }
