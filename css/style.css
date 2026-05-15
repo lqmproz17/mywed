@@ -1,0 +1,571 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #0B0C10;
+    color: #C5C6C7;
+    line-height: 1.7;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 8%;
+
+    background: rgba(11, 12, 16, 0.95);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #1F2833;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #66FCF1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul{
+    display: flex;
+    gap: 35px;
+}
+
+nav ul li a{
+    position: relative;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #66FCF1;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+    width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color: #66FCF1;
+}
+
+.header-icons,
+.nav-icons{
+    display: flex;
+    gap: 18px;
+    font-size: 1.2rem;
+    color: #66FCF1;
+    cursor: pointer;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container,
+main{
+    width: 90%;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #66FCF1;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+    linear-gradient(rgba(11,12,16,0.7),
+    rgba(11,12,16,0.7)),
+    url('../img/hero-bg.jpg')
+    center/cover;
+}
+
+.hero h1{
+    font-size: 5rem;
+    color: #66FCF1;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    color: #C5C6C7;
+}
+
+/* =========================
+   GRID / PROJECTS
+========================= */
+
+.grid-layout,
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.card,
+.project-card{
+    background: #1F2833;
+    border: 1px solid #2c3a47;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover,
+.project-card:hover{
+    transform: translateY(-10px);
+    border-color: #66FCF1;
+}
+
+.project-img img{
+    height: 320px;
+    object-fit: cover;
+}
+
+.project-info{
+    padding: 25px;
+}
+
+.project-info h3{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.project-info p{
+    color: #9da5ad;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-content{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text{
+    flex: 1;
+}
+
+.about-text h2{
+    color: #66FCF1;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.about-text p{
+    margin-bottom: 20px;
+    color: #C5C6C7;
+}
+
+.about-image,
+.about-img{
+    flex: 1;
+}
+
+.about-image img,
+.about-img img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline{
+    margin-top: 90px;
+
+    border-top: 2px solid #45A29E;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding-top: 40px;
+    position: relative;
+}
+
+.timeline-item{
+    width: 25%;
+    position: relative;
+}
+
+.timeline-item::before{
+    content: '';
+
+    position: absolute;
+    top: -49px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background: #66FCF1;
+    border-radius: 50%;
+}
+
+.timeline-info{
+    background: #1F2833;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #2d2d2d;
+}
+
+.timeline-info strong{
+    display: block;
+    margin-bottom: 10px;
+    color: #66FCF1;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-wrapper,
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-form,
+.contact-info{
+    background: #1F2833;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #2c3a47;
+}
+
+.contact-info h3{
+    margin-bottom: 20px;
+    color: #66FCF1;
+}
+
+.info-item{
+    margin-bottom: 15px;
+}
+
+.map-box{
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.map-box iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* =========================
+   FORM
+========================= */
+
+input,
+textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    background: #0B0C10;
+    border: 1px solid #45A29E;
+    border-radius: 12px;
+
+    color: white;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: #66FCF1;
+}
+
+button,
+.btn-submit,
+.btn-contact,
+.faq-btn{
+    display: inline-block;
+
+    background: #66FCF1;
+    color: #0B0C10;
+
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 40px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover,
+.btn-submit:hover,
+.btn-contact:hover,
+.faq-btn:hover{
+    background: #45A29E;
+    color: white;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item{
+    background: #1F2833;
+    border-radius: 15px;
+    border: 1px solid #2c3a47;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq-item:hover{
+    border-color: #66FCF1;
+}
+
+.faq-header{
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq-icon{
+    font-size: 18px;
+    color: #66FCF1;
+}
+
+.faq-content{
+    max-height: 0;
+    overflow: hidden;
+
+    padding: 0 25px;
+
+    color: #bbb;
+    line-height: 1.8;
+
+    transition: all 0.4s ease;
+}
+
+.faq-item.active .faq-content{
+    max-height: 300px;
+    padding: 0 25px 25px;
+}
+
+/* =========================
+   CTA BOX
+========================= */
+
+.cta-box{
+    margin-top: 80px;
+
+    background: #1F2833;
+    border: 1px solid #2c3a47;
+    border-radius: 20px;
+
+    padding: 60px 30px;
+
+    text-align: center;
+}
+
+.cta-box strong{
+    font-size: 2rem;
+    color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding: 40px 8%;
+
+    border-top: 1px solid #1F2833;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #0B0C10;
+}
+
+.footer-socials,
+.social-links{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-socials a,
+.social-links i{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #45A29E;
+    border-radius: 50%;
+
+    color: #66FCF1;
+
+    transition: 0.3s;
+}
+
+.footer-socials a:hover,
+.social-links i:hover{
+    background: #66FCF1;
+    color: #0B0C10;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 992px){
+
+    .about-content,
+    .contact-wrapper,
+    .contact-container{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .timeline{
+        flex-direction: column;
+        border-top: none;
+    }
+
+    .timeline-item{
+        width: 100%;
+    }
+
+    .timeline-item::before{
+        display: none;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .grid-layout,
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .page-title{
+        font-size: 2.2rem;
+    }
+
+}
