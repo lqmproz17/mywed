@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Chúng Tôi - Anh Phong</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #111;
+            color: white;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 1px solid #333;
+            background: #111;
+        }
+
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav ul{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover{
+            color: #888;
+        }
+
+        .nav-icons{
+            display: flex;
+            gap: 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* MAIN */
+
+        .container{
+            width: 90%;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        /* ABOUT */
+
+        .about-content{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .about-text{
+            flex: 1;
+        }
+
+        .about-text h2{
+            font-size: 38px;
+            margin-bottom: 25px;
+        }
+
+        .about-text p{
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .about-img{
+            flex: 1;
+        }
+
+        .about-img img{
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        /* TIMELINE */
+
+        .timeline-title{
+            font-size: 32px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .timeline{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            border-top: 2px solid #444;
+            padding-top: 50px;
+            margin-top: 20px;
+        }
+
+        .timeline-item{
+            width: 24%;
+            position: relative;
+        }
+
+        .timeline-item::before{
+            content: '';
+            position: absolute;
+            top: -61px;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .timeline-info{
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #2d2d2d;
+            transition: 0.3s;
+        }
+
+        .timeline-info:hover{
+            transform: translateY(-5px);
+            border-color: #666;
+        }
+
+        .timeline-info strong{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .timeline-info p{
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+
+        footer{
+            margin-top: 80px;
+            padding: 30px 60px;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-socials{
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-socials a{
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .footer-socials a:hover{
+            color: #888;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width: 900px){
+
+            header{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .about-content{
+                flex-direction: column;
+            }
+
+            .timeline{
+                flex-direction: column;
+                border-top: none;
+            }
+
+            .timeline-item{
+                width: 100%;
+            }
+
+            .timeline-item::before{
+                display: none;
+            }
+
+            footer{
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">Anh Phong</div>
+
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        TRANG CHỦ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html" style="text-decoration: underline;">
+                        VỀ CHÚNG TÔI
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        DỰ ÁN
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        LIÊN HỆ
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="nav-icons">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="container">
+
+        <!-- ABOUT -->
+
+        <section class="about-content">
+
+            <div class="about-text">
+
+                <h2>VỀ ANH PHONG</h2>
+
+                <p>
+                    Với tâm huyết trong lĩnh vực thiết kế nội thất và decor nhà cửa,
+                    chúng tôi tự hào mang đến những giải pháp không gian sống hiện đại,
+                    tinh tế và tối ưu công năng.
+                </p>
+
+                <p>
+                    Hơn 10 năm kinh nghiệm trong lĩnh vực nội thất và decor nhà cửa,
+                    chúng tôi luôn đặt chất lượng và tính thẩm mỹ lên hàng đầu.
+                    Từ những sản phẩm tối giản hiện đại đến các thiết kế sang trọng,
+                    shop mong muốn mang đến cho khách hàng những không gian sống
+                    ấm cúng, tiện nghi và đầy cảm hứng.
+                </p>
+
+            </div>
+
+            <div class="about-img">
+
+                <!-- Đổi tên ảnh thành about.jpg -->
+                <img src="https://www.btaskee.com/wp-content/uploads/2023/03/home-decor-la-qua-trinh-chon-loc-ket-hop-noi-that-va-phu-kien-trang-tri-1.jpg" alt="Nội thất Anh Phong">
+
+            </div>
+
+        </section>
+
+        <!-- TIMELINE -->
+
+        <h3 class="timeline-title">
+            Hành Trình 10 Năm Phát Triển
+        </h3>
+
+        <section class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-info">
+
+                    <strong>2016 — Khởi Đầu Đam Mê</strong>
+
+                    <p>
+                        Bắt đầu từ một cửa hàng nhỏ với mong muốn mang đến những
+                        sản phẩm nội thất và decor tinh tế cho mọi không gian sống.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-info">
+
+                    <strong>2019 — Mở Rộng Phong Cách</strong>
+
+                    <p>
+                        Phát triển thêm nhiều dòng sản phẩm hiện đại, tối giản
+                        và nâng cao trải nghiệm mua sắm cho khách hàng.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-info">
+
+                    <strong>2022 — Khẳng Định Thương Hiệu</strong>
+
+                    <p>
+                        Trở thành địa chỉ quen thuộc của những người yêu thích
+                        decor nhà cửa với hàng nghìn khách hàng tin tưởng.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-info">
+
+                    <strong>2026 — Kiến Tạo Không Gian Sống</strong>
+
+                    <p>
+                        Tiếp tục đổi mới, cập nhật xu hướng nội thất hiện đại
+                        và đồng hành cùng khách hàng trong hành trình xây dựng tổ ấm.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-left">
+
+            <p>Liên hệ với chúng tôi:</p>
+
+            <div class="footer-socials">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="mailto:yourgmail@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-behance"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <span>© 2026 Anh Phong</span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
