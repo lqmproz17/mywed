@@ -51,7 +51,7 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
 <img width="1448" height="1086" alt="AAA" src="https://github.com/user-attachments/assets/c841b7c0-7de2-4a26-b6f2-2221828e2b79" />
 
 
- * **Mục tiêu:** Giúp giải đáp những thắc mắc của khách hàng>
+ * **Mục tiêu:** Giúp giải đáp những thắc mắc của khách hàng> 
 
 
 # Công Cụ AI & CSS Trong Dự Án
@@ -71,7 +71,6 @@ Một số lệnh AI được sử dụng trong quá trình phát triển:
    * Tạo giao diện website nội thất hiện đại
    * Thiết kế CSS dark mode tối giản
    * Tối ưu responsive cho mobile
-   * Tạo hiệu ứng FAQ bằng JavaScript
    * Thiết kế layout dạng grid hiện đại
 
 
