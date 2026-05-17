@@ -52,8 +52,6 @@ Xin chào, tôi là Nguyễn Lâm Anh Phong.
 
 
  * **Mục tiêu:** Giúp giải đáp những thắc mắc của khách hàng>
- * **Thành phần chính:**
-   * **Cấu trúc Accordion:** Sử dụng dấu {+} để mở và {-} để đóng câu hỏi
 
 
 # Công Cụ AI & CSS Trong Dự Án
