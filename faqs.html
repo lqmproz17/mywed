@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #111;
+            color: white;
+        }
+
+        /* HEADER */
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 1px solid #333;
+            background: #111;
+        }
+
+        .logo{
+            color: white;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav ul{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover{
+            color: #888;
+        }
+
+        .header-icons{
+            display: flex;
+            gap: 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* MAIN */
+
+        main{
+            width: 85%;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        .page-title{
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+        }
+
+        /* FAQ */
+
+        .faq-list{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .faq-item{
+            background: #1a1a1a;
+            border-radius: 15px;
+            border: 1px solid #2c2c2c;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .faq-item:hover{
+            border-color: #555;
+        }
+
+        .faq-header{
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .faq-header span{
+            font-size: 22px;
+        }
+
+        .faq-content{
+            padding: 0 25px 25px;
+            color: #bbb;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        /* CTA */
+
+        .cta-box{
+            margin-top: 70px;
+            text-align: center;
+            background: #1a1a1a;
+            padding: 50px 30px;
+            border-radius: 20px;
+            border: 1px solid #2d2d2d;
+        }
+
+        .cta-box p{
+            margin-bottom: 15px;
+        }
+
+        .cta-box strong{
+            font-size: 28px;
+        }
+
+        .btn-contact{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 35px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-contact:hover{
+            background: #888;
+            color: white;
+        }
+
+        /* FOOTER */
+
+        footer{
+            margin-top: 80px;
+            padding: 30px 60px;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-socials{
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-socials a{
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .footer-socials a:hover{
+            color: #888;
+        }
+
+        .footer-faq{
+            background: white;
+            color: black;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width: 768px){
+
+            header{
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .faq-header{
+                font-size: 16px;
+            }
+
+            footer{
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+            Anh Phong
+        </a>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        TRANG CHỦ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        VỀ CHÚNG TÔI
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        DỰ ÁN
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        LIÊN HỆ
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-icons">
+
+            <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+
+            <span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <h1 class="page-title">
+            CÂU HỎI THƯỜNG GẶP
+        </h1>
+
+        <<!-- FAQ LIST -->
+
+<div class="faq-list">
+
+    <!-- FAQ 1 -->
+
+    <div class="faq-item active">
+
+        <div class="faq-header">
+
+            <span>
+                1. Thời gian hoàn thành một dự án là bao lâu?
+            </span>
+
+            <i class="faq-icon fa-solid fa-minus"></i>
+
+        </div>
+
+        <div class="faq-content">
+
+            Tùy theo quy mô và độ phức tạp của từng dự án.
+            Thông thường thời gian hoàn thiện sẽ dao động
+            từ 2 đến 6 tuần.
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 2 -->
+
+    <div class="faq-item">
+
+        <div class="faq-header">
+
+            <span>
+                2. Chi phí thiết kế được tính như thế nào?
+            </span>
+
+            <i class="faq-icon fa-solid fa-plus"></i>
+
+        </div>
+
+        <div class="faq-content">
+
+            Chi phí sẽ phụ thuộc vào diện tích, phong cách thiết kế
+            và các hạng mục thi công mà khách hàng yêu cầu.
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 3 -->
+
+    <div class="faq-item">
+
+        <div class="faq-header">
+
+            <span>
+                3. Tôi có thể yêu cầu chỉnh sửa không?
+            </span>
+
+            <i class="faq-icon fa-solid fa-plus"></i>
+
+        </div>
+
+        <div class="faq-content">
+
+            Chúng tôi luôn hỗ trợ khách hàng chỉnh sửa thiết kế
+            để đảm bảo sản phẩm cuối cùng phù hợp nhất với nhu cầu.
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 4 -->
+
+    <div class="faq-item">
+
+        <div class="faq-header">
+
+            <span>
+                4. Shop có hỗ trợ thi công trọn gói không?
+            </span>
+
+            <i class="faq-icon fa-solid fa-plus"></i>
+
+        </div>
+
+        <div class="faq-content">
+
+            Có. Chúng tôi cung cấp dịch vụ thiết kế và thi công
+            nội thất trọn gói cho căn hộ, nhà phố, biệt thự và studio.
+
+        </div>
+
+    </div>
+
+</div>
+        <!-- CTA -->
+
+        <div class="cta-box">
+
+            <p style="font-size: 40px;">
+                💬
+            </p>
+
+            <p>
+                <strong>
+                    Bạn vẫn còn câu hỏi?
+                </strong>
+            </p>
+
+            <a href="contact.html"
+            class="btn-contact">
+
+                LIÊN HỆ NGAY
+
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-left">
+
+            <p>
+                Liên hệ với chúng tôi:
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="mailto:anhphonginterior@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-behance"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <span>
+                © 2026 Anh Phong
+            </span>
+
+            <span class="footer-faq">
+                FAQS
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+<script>
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+        const header = item.querySelector(".faq-header");
+        const icon = item.querySelector(".faq-icon");
+
+        header.addEventListener("click", () => {
+
+            item.classList.toggle("active");
+
+            if(item.classList.contains("active")){
+                icon.classList.remove("fa-plus");
+                icon.classList.add("fa-minus");
+            }
+            else{
+                icon.classList.remove("fa-minus");
+                icon.classList.add("fa-plus");
+            }
+
+        });
+
+    });
+
+</script>
+
+</html>
+
